@@ -1,0 +1,119 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* App Card */
+.app-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.app-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.app-title {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Task Input */
+.task-input-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input-wrapper input {
+    flex: 1;
+    min-width: 0; /* ensures proper shrinking in flex */
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #dcdde1;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.task-input-wrapper input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102,126,234,0.5);
+}
+
+.task-input-wrapper button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #667eea;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.task-input-wrapper button:hover {
+    background: #556cd6;
+    transform: translateY(-2px);
+}
+
+/* Task List */
+.task-list {
+    width: 100%;
+    list-style: none;
+}
+
+.task-list li {
+    background: #f7f7f7;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.task-list li:hover {
+    background: #e2e2ff;
+    transform: translateX(5px);
+}
+
+/* Delete Button */
+.task-list li button {
+    background: #ff6b6b;
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.task-list li button:hover {
+    background: #ff4c4c;
+    transform: translateY(-2px);
+}
